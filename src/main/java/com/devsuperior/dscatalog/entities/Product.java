@@ -30,7 +30,7 @@ public class Product implements Serializable{
 	@Column(columnDefinition = "TEXT")
 	private String description;
 	
-	private Double Price;
+	private Double price;
 	private String imgUrl;
 	
 	@Column(columnDefinition = "TIMESTAMP WITHOUT TIME ZONE")
@@ -51,7 +51,7 @@ public class Product implements Serializable{
 		this.id = id;
 		this.name = name;
 		this.description = description;
-		Price = price;
+		this.price = price;
 		this.imgUrl = imgUrl;
 		this.date = date;
 	}
@@ -81,11 +81,11 @@ public class Product implements Serializable{
 	}
 
 	public Double getPrice() {
-		return Price;
+		return price;
 	}
 
 	public void setPrice(Double price) {
-		Price = price;
+		this.price = price;
 	}
 
 	public String getImgUrl() {
